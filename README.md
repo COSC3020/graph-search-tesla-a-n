@@ -44,11 +44,15 @@ Possible edge cases:
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
 
+With V as # of vertices, E as # of edges,
+
 Aiming for:
 + each node visited once, $\Theta(V)$
 + examine each node's edges, $\Theta(E)$
 + visited set ops average to $\Theta(1)$
 + Path made takes $\Theta(V)$
+
+Worst-case complexity: $\Theta(V) + \Theta(V) + \Theta(E) + \Theta(1)$
 
 ## Bonus
 
