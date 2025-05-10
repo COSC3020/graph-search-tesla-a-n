@@ -3,10 +3,15 @@ const jsc = require('jsverify');
 
 eval(fs.readFileSync('code.js')+'');
 
-const test =
-    jsc.forall("array (pair nat nat)", function(edges) {
-      
-        return JSON.stringify(list) == JSON.stringify(convertToAdjList(mat));
+const testReturnBug =
+    jsc.forall("bool", function() {
+        const graph = {
+            'A': ['B'],
+            'B': ['C'],
+            'C': []
+        };
+        const path depthFirstSearch(graph, 'A', 'C');
+        return JSON.stringify(path) === JSON.stringify(['A', 'B', 'C']);
     });
 
-jsc.assert(test, { tests: 100 });
+jsc.assert(testReturnBug);
