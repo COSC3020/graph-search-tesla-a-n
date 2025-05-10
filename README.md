@@ -52,7 +52,7 @@ Aiming for:
 + visited set ops average to $\Theta(1)$
 + Path made takes $\Theta(V)$
 
-Worst-case complexity: $\Theta(V) + \Theta(V) + \Theta(E) + \Theta(1)$
+Worst-case complexity: $\Theta(V) + \Theta(V) + \Theta(E) + \Theta(1)$ or $\Theta(V + E)$
 
 ## Bonus
 
