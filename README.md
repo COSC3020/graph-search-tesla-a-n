@@ -24,9 +24,9 @@ the function and run automatically when you commit through a GitHub action.
 DFS explores as far as possible along each branch before backtracking
 
 Using an adjacency list where:
-    - keys are nodes
-    - values are arrays of neighbors
-    - use recursion for DFS travel to use call stack
+    -  Keys are nodes
+    -  Values are arrays of neighbors
+    -  Use recursion for DFS travel to use call stack
 
 Start at startNode, mark each visited using a set, explore deeper for neighbors 
 not visited yet, track with traversal, target aquired; return complete path
@@ -35,9 +35,9 @@ If a branch that doesn't have the target is explored, backtrack and remove node
 from path
 
 Possible edge cases:
-    - if start and end at same node, return [startNode]
-    - if no path from start to target, ret null arr
-    - if either node not in graph, ret null arr
+    -  if start and end at same node, return [startNode]
+    -  if no path from start to target, ret null arr
+    -  if either node not in graph, ret null arr
 
 ## Runtime Analysis
 
@@ -45,10 +45,10 @@ What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
 
 Aiming for:
-    + each node visited once, $\Theta(V)$
-    + examine each node's edges, $\Theta(E)$
-    + visited set ops average to $\Theta(1)$
-    + Path made takes $\Theta(V)$
+    +  each node visited once, $\Theta(V)$
+    +  examine each node's edges, $\Theta(E)$
+    +  visited set ops average to $\Theta(1)$
+    +  Path made takes $\Theta(V)$
 
 ## Bonus
 
