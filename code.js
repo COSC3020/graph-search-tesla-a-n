@@ -14,7 +14,7 @@ function depthFirstSearch(graph, startNode, targetNode) {
     const visited = new Set();
     
     //store path to target if found
-    var resultPath = [];
+    let resultPath = [];
 
     //make a DFS helper function like in functional prog
     function dfs(currentNode, path) {
@@ -48,7 +48,7 @@ function depthFirstSearch(graph, startNode, targetNode) {
     //start DFS from start with empty path
     dfs(startNode, []);
     //return the path
-    return [];
+    return resultPath;
 }
 
 
