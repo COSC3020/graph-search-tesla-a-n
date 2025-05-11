@@ -10,7 +10,7 @@ const testReturnBug =
             'B': ['C'],
             'C': []
         };
-        const path depthFirstSearch(graph, 'A', 'C');
+        const path = depthFirstSearch(graph, 'A', 'C');
         return JSON.stringify(path) === JSON.stringify(['A', 'B', 'C']);
     });
 
