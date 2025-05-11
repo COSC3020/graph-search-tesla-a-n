@@ -6,7 +6,7 @@ function depthFirstSearch(graph, startNode, targetNode) {
     }
     
     //if start and target node are the same, return list with that ndoe
-    if (startNode == targetNode) {
+    if (startNode === targetNode) {
         return [startNode];
     }
     
@@ -25,7 +25,7 @@ function depthFirstSearch(graph, startNode, targetNode) {
         path.push(currentNode);
         
         //if target found, save path and return true
-        if (currentNode == targetNode) {
+        if (currentNode === targetNode) {
             resultPath = [...path];
             return true;
         }
