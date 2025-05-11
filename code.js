@@ -51,7 +51,17 @@ function depthFirstSearch(graph, startNode, targetNode) {
     return resultPath;
 }
 
-
+//breadth first search
+//initialize queue with startNode, mark as visited
+//use map to track previous nodes
+//while queue not empty
+    //dequeue a node as currentNode
+    //for each neighbor of currentNode
+        //if neighbor is target then reconstruct the path and return
+        //if neighhor not visited
+            //mark as visited
+            //add to the queue
+            //record currentNode as previous node for this neighbor
 
 
 
