@@ -1,6 +1,6 @@
 # Search in Graphs
 
-Recall the pseudocode for Depth-First Search:
+Recall the pseudocode for Depth-First Search: 
 
 Given a graph, a start node, and a node we're looking for:
 - starting at the start node, while unvisited nodes remain
