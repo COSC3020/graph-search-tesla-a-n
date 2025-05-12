@@ -58,6 +58,13 @@ Worst-case complexity: $\Theta(V) + \Theta(V) + \Theta(E) + \Theta(1)$ or $\Thet
 
 Implement and analyze breadth-first search.
 
+## Testing
+
+Descriptions of implemented tests:
+
+- testDFSLinearGraph + testBFSLinearGraph: tests BFS and DFS on a simple linear graph
+- testDFSBranchingGraph + testDFSBranchingGraph: tests BFS and DFS on a graph that branches
+
 ## Sources
 
 [Pre-order Traversal](https://www.geeksforgeeks.org/preorder-traversal-of-binary-tree/)
