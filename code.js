@@ -63,5 +63,36 @@ function depthFirstSearch(graph, startNode, targetNode) {
             //add to the queue
             //record currentNode as previous node for this neighbor
 
-
+function breadthFirstSearch(graph, startNode, targetNode) {
+    if (!graph[startNode] || !graph[targetNode]) {
+        return [];
+    }
+    if (startNode === targetNode) {
+        return [startNode];
+    }
+    const visited = new Set();
+    const queue = [startNode];
+    visited.add(startNode);
+    const previousNode = new Map();
+    while (queue.length > 0) {
+        const currentNode = queue.shift();
+        for (const neighbor of graph[currentNode]) {
+            if (neighbor === targetNode) {
+                const path = [targetNode];
+                let current = currentNode;
+                while (current !== undefined) {
+                    path.unshift(current);
+                    current = previousNode.get(current);
+                }
+                return path;
+            }
+            if (!visited.has(neighbor)) {
+                visited.add(neighbor);
+                queue.push(neighbor);
+                previousNode.set(neighbor, currentNode);
+            }
+        }
+    }
+    return [];
+}
 
