@@ -25,7 +25,7 @@ const testBFSLinearGraph =
         return JSON.stringify(path) === JSON.stringify(['A', 'B', 'C']);
     });
 
-const testDFSBranchingGraph = jsc.forall("bool". function() {
+const testDFSBranchingGraph = jsc.forall("bool", function() {
     const graph = {
         'A': ['B'. 'C'],
         'B': ['D', 'E'],
@@ -39,7 +39,7 @@ const testDFSBranchingGraph = jsc.forall("bool". function() {
     return JSON.stringify(path) === JSON.stringify(['A', 'B', 'E', 'G']);
 });
 
-const testBFSBranchingGraph = jsc.forall("bool". function() {
+const testBFSBranchingGraph = jsc.forall("bool", function() {
     const graph = {
         'A': ['B'. 'C'],
         'B': ['D', 'E'],
