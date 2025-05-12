@@ -27,7 +27,7 @@ const testBFSLinearGraph =
 
 const testDFSBranchingGraph = jsc.forall("bool", function() {
     const graph = {
-        'A': ['B'. 'C'],
+        'A': ['B', 'C'],
         'B': ['D', 'E'],
         'C': ['F'],
         'D': [],
@@ -41,7 +41,7 @@ const testDFSBranchingGraph = jsc.forall("bool", function() {
 
 const testBFSBranchingGraph = jsc.forall("bool", function() {
     const graph = {
-        'A': ['B'. 'C'],
+        'A': ['B', 'C'],
         'B': ['D', 'E'],
         'C': ['F'],
         'D': [],
