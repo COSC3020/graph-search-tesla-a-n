@@ -64,6 +64,12 @@ Descriptions of implemented tests:
 
 - testDFSLinearGraph + testBFSLinearGraph: tests BFS and DFS on a simple linear graph
 - testDFSBranchingGraph + testDFSBranchingGraph: tests BFS and DFS on a graph that branches
+- testSameStartAndTarget: making sure proper handling of start and target being the same
+- testNodesNotInGraph: error handling when nodes don't exist
+- testGraphWithCycles: making sure they dont get caught in a loop
+- testNoPath: verifying behavior when theres no nodes
+- testLargerGraph: scalability
+- testNumericNodes: compatibility with different node types
 
 ## Sources
 
