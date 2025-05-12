@@ -53,8 +53,8 @@ const testBFSBranchingGraph = jsc.forall("bool", function() {
     return JSON.stringify(path) === JSON.stringify(['A', 'B', 'E', 'G']);
 });
 
-jsc.assert(testDFSReturnBug);
-jsc.assert(testBFSReturnBug);
+jsc.assert(testDFSLinearGraph);
+jsc.assert(testBFSLinearGraph);
 jsc.assert(testBFSBranchingGraph);
 jsc.assert(testDFSBranchingGraph);
 
