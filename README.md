@@ -58,6 +58,10 @@ Worst-case complexity: $\Theta(V) + \Theta(V) + \Theta(E) + \Theta(1)$ or $\Thet
 
 Implement and analyze breadth-first search.
 
+Breadth first search has the same complexity as DFS but differ in order of processing
+
+BFS has $\Theta(V + E)$ because it processes each vertex once ($\Theta(V)$) and looks at each edge once ($\Theta(E)$)
+
 ## Testing
 
 Descriptions of implemented tests:
@@ -77,5 +81,7 @@ Descriptions of implemented tests:
 
 [DFS on graph](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) "Time complexity: O(V + E). Note that the time complexity is same here because we visit every vertex at most once and every edge is traversed at most once (in directed) and twice in undirected.
 Auxiliary Space: O(V + E), since an extra visited array of size V is required, And stack size for recursive calls to dfsRec function."
+
+Windsurf extention in vscode helped write tests (graphs with cycles, no path, and numeric nodes) for DFS and BFS. I gave it pseudocode and it gave me the tests.
 
 "I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice." 
